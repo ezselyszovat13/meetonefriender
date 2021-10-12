@@ -21,6 +21,7 @@ public class ExampleService {
     }
 
     public void addExample(Example example) {
+        System.out.println(example.toString());
         exampleRepository.save(example);
     }
 

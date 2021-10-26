@@ -1,20 +1,48 @@
-﻿<!-- nav -->
-<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
-    <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Home</a>
-        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div class="boddy">
+  <div id="card2">
+  <div id="card-content">
+    <div id="card-title">
+    <a href="#!"><h3>LOGIN</h3></a>
+    <div class="form-border"></div>
     </div>
-</nav>
-
-<!-- main app container -->
-<div class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 offset-sm-3">
-                <alert></alert>
-                <router-outlet></router-outlet>
-            </div>
-        </div>
+   <div id="card-title2">
+    <a routerLink="app.component2"><h3>SIGN UP</h3></a>
+    <div class="form-border"></div>
     </div>
-</div>
+    <form method="post" class="form">
+    <label for="user-email" style="padding-top:13px">
+      &nbsp;Email
+      </label>
+    <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+    <div class="form-border"></div>
+    <label for="user-password" style="padding-top:22px">&nbsp;Password
+      </label>
+    <input id="user-password" class="form-content" type="password" name="password" required />
+    <div class="form-border"></div>
+    <a href="forgot.html">
+      <legend id="forgot-pass">Forgot password?</legend>
+    </a>
+    <input id="submit-btn" type="submit" name="submit" value="LOGIN" />
+     
+    </form>
+  </div>
+  </div>
+  </div>
+ 
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<router-outlet></router-outlet>
